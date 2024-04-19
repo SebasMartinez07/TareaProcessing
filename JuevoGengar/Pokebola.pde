@@ -7,6 +7,6 @@ class Pokebola{
   }
   
   public void dibujarPokebola(){
-    image(imgPokebola,500,200,90,90);
+    image(imgPokebola,posicion.x,posicion.y,40,40);
   }
 }
