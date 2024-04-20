@@ -7,13 +7,12 @@ public void setup(){
   
   gengarJuego = new Gengar();
   gengarJuego.posicion = new PVector(400,500);
-  gengarJuego.velGengar = new PVector(3.5,0);
+  gengarJuego.velGengar = new PVector(4,0);
   
-  pokebolaJuego = new Pokebola();
-  pokebolaJuego.posicion = new PVector(400,110);
+  pokebolaJuego = new Pokebola(new PVector(400,100), new PVector (0,2.5));
   
   ashJuego = new Ash();
-  ashJuego.posicion = new PVector(400,50);
+  ashJuego.posicionA = new PVector(400,50);
   ashJuego.velAsh = new PVector(2,0);
 }
 
@@ -23,7 +22,9 @@ public void draw(){
   
   gengarJuego.dibujarGengar();
   pokebolaJuego.dibujarPokebola();
+  pokebolaJuego.moverP();
   ashJuego.dibujarAsh();
+  ashJuego.moverA();
     if(mousePressed){
       if(mouseButton == RIGHT)
       gengarJuego.posicion.x+=gengarJuego.velGengar.x;
