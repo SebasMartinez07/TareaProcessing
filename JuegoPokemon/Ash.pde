@@ -16,17 +16,4 @@ class Ash{
   public void dibujarAsh(){
     image(imgAsh,posicionA.x,posicionA.y,80,80);
   }
-  
-  public void moverA(){
-  if(this.posicionA.x<=width){
-    this.posicionA.x+=this.velAsh.x;
-  }else{
-    this.posicionA.x=100;
-  }
-  if(this.posicionA.x>=width){
-    this.posicionA.x-=this.velAsh.x;
-  }else{
-    this.posicionA.x=40;
-  }
-  }
 }
