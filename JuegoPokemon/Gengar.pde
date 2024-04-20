@@ -1,6 +1,7 @@
 class Gengar{
   public PVector posicion;
   public PImage imgGengar;
+  public PVector velGengar;
   //CONSTRUCTOR AVE
   public Gengar(){
     imgGengar = loadImage("imgGengar.png");

@@ -1,6 +1,7 @@
 class Ash{
   public PVector posicion;
   public PImage imgAsh;
+  public PVector velAsh;
   
   public Ash(){
     imgAsh = loadImage("imgAsh.png");
