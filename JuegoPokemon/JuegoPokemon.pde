@@ -22,7 +22,6 @@ public void draw(){
   
   gengarJuego.dibujarGengar();
   pokebolaJuego.dibujarPokebola();
-  pokebolaJuego.moverP();
   ashJuego.dibujarAsh();
     if(mousePressed){
       if(mouseButton == RIGHT)
@@ -38,5 +37,10 @@ public void draw(){
     if(ashJuego.posicionA.x < 1){
       ashJuego.velAsh.x = 2;
     }
+     if(this.pokebolaJuego.posicionP.y<=height-65){
+    this.pokebolaJuego.posicionP.y+=this.pokebolaJuego.velPokebola.y;
+  }else{
+    this.pokebolaJuego.posicionP.y=100;
+  }
   }
   
