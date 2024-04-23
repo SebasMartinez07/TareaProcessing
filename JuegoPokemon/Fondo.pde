@@ -1,8 +1,9 @@
 class Fondo{
-  public PVector posicionF;
-  public PImage imgFondo;
+  private PVector posicionF;
+  private PImage imgFondo;
   
-  public Fondo(){
+  //CONSTRUCTOR
+    public Fondo(){
     imgFondo = loadImage("imgFondo.jpg");
   }
   

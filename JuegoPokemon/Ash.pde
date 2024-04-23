@@ -1,8 +1,9 @@
 class Ash{
-  public PVector posicionA;
-  public PImage imgAsh;
-  public PVector velAsh;
+  private PVector posicionA;
+  private PImage imgAsh;
+  private PVector velAsh;
   
+  //CONSTRUCTOR
   public Ash(){
     imgAsh = loadImage("imgAsh.png");
   }

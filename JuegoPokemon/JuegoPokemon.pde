@@ -27,16 +27,19 @@ public void draw(){
   background(#A09DF0);
   fill(#2E5530);
   noStroke();
-  int y = 500;
-  int rectHeight = 1;
   
+  
+  //Dibujo
   fondoJuego.dibujarFondo();
-   for (int i = y; i < height; i += rectHeight) {
-    rect(0, i, width, rectHeight);
+   for (int i = 0; i < width; i += 1) {
+    rect(0, 570, width, 30);
   }
   gengarJuego.dibujarGengar();
   pokebolaJuego.dibujarPokebola();
   ashJuego.dibujarAsh();
+  
+  
+  //Movimiento
     if(mousePressed){
       if(mouseButton == RIGHT)
       gengarJuego.posicion.x+=gengarJuego.velGengar.x;

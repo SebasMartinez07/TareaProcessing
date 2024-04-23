@@ -1,7 +1,7 @@
 class Gengar{
-  public PVector posicion;
-  public PImage imgGengar;
-  public PVector velGengar;
+  private PVector posicion;
+  private PImage imgGengar;
+  private PVector velGengar;
   
   //CONSTRUCTOR Gengar
   public Gengar(){

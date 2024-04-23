@@ -1,8 +1,9 @@
 class Pokebola{
-  public PVector posicionP;
-  public PImage imgPokebola;
-  public PVector velPokebola;
+  private PVector posicionP;
+  private PImage imgPokebola;
+  private PVector velPokebola;
   
+  //CONSTRUCTOR
   public Pokebola(){
     imgPokebola = loadImage("imgPokebola.png");
   }
