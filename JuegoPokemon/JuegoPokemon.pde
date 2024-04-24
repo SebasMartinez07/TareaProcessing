@@ -1,7 +1,7 @@
-Gengar gengarJuego;
-Pokebola pokebolaJuego;
-Ash ashJuego;
-Fondo fondoJuego;
+private Gengar gengarJuego;
+private Pokebola pokebolaJuego;
+private Ash ashJuego;
+private Fondo fondoJuego;
 
 public void setup(){
   size(800,600);
@@ -40,26 +40,9 @@ public void draw(){
   
   
   //Movimiento
-    if(mousePressed){
-      if(mouseButton == RIGHT)
-      gengarJuego.posicion.x+=gengarJuego.velGengar.x;
-     else{
-       gengarJuego.posicion.x-=gengarJuego.velGengar.x;
-     }
-    }
-    ashJuego.posicionA.x = ashJuego.posicionA.x + ashJuego.velAsh.x;
-    if(ashJuego.posicionA.x > 720){
-      ashJuego.velAsh.x = -3.5;
-    }
-    if(ashJuego.posicionA.x < 1){
-      ashJuego.velAsh.x = 3.5;
-    }
+    gengarJuego.mover();
+    ashJuego.mover();
+    pokebolaJuego.mover();
     
-    
-     if(this.pokebolaJuego.posicionP.y<=height-65){
-    this.pokebolaJuego.posicionP.y+=this.pokebolaJuego.velPokebola.y;
-  }else{
-    this.pokebolaJuego.posicionP.y=100;
-  }
 }
   

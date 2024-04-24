@@ -17,4 +17,14 @@ class Ash{
   public void dibujarAsh(){
     image(imgAsh,posicionA.x,posicionA.y,80,80);
   }
+  
+  public void mover(){
+    ashJuego.posicionA.x = ashJuego.posicionA.x + ashJuego.velAsh.x;
+    if(ashJuego.posicionA.x > 720){
+      ashJuego.velAsh.x = -3.5;
+    }
+     if(ashJuego.posicionA.x < 1){
+      ashJuego.velAsh.x = 3.5;
+    }
+  }
 }

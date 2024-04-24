@@ -18,12 +18,11 @@ class Pokebola{
     image(imgPokebola,posicionP.x,posicionP.y,40,40);
   }
   
-/*  public void moverP(){
+  public void mover(){
   if(this.posicionP.y<=height-65){
     this.posicionP.y+=this.velPokebola.y;
   }else{
     this.posicionP.y=100;
   }
 }
-**/
 }
